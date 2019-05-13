@@ -11,7 +11,9 @@
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
         ("melpa" . "http://melpa.org/packages/")
-        ("org" . "http://orgmode.org/elpa/")))
+        ;; ("org" . "http://orgmode.org/elpa/")
+	)
+      )
 ;; ------------------------------------------------------------------------- ;;
 ;; init-loaderの設定
 ;; ------------------------------------------------------------------------- ;;
@@ -31,9 +33,9 @@
 (append
 '(
 (top . 0)
-(left . 735)
-(width . 98)
-(height . 150)
+(left . 990)
+(width . 100)
+(height . 200)
 )
 default-frame-alist))
 
@@ -41,9 +43,9 @@ default-frame-alist))
 ;; フォント
 ;; Rictyフォントの使用
 ;; ------------------------------------------------------------------------- ;;
-(set-face-attribute 'default nil :family "Ricty" :height 140)
-(set-fontset-font nil 'japanese-jisx0208 (font-spec :family "Ricty"))
-(setq face-font-rescale-alist '(("Ricty" . 1.00)))
+(set-face-attribute 'default nil :family "Ricty Diminished" :height 130)
+(set-fontset-font nil 'japanese-jisx0208 (font-spec :family "Ricty Diminished"))
+(setq face-font-rescale-alist '(("Ricty Diminished" . 1.00)))
 
 ;; ------------------------------------------------------------------------- ;;
 ;; Pathの引き継ぎ

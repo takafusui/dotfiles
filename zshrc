@@ -18,13 +18,13 @@ export PATH="/usr/local/Cellar/gcc/8.2.0/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 # python
-export PYTHONPATH="$HOME/.local/bin:$PATH"
+# export PYTHONPATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 # the following lines were inserted for pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/versions/anaconda3-5.0.1/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # openmpi
 export MANPATH="/usr/local/openmpi/share/man:$MANPATH"
@@ -44,6 +44,7 @@ export PATH=/Users/takafumi/Knitro/knitro-10.3.1-z-MacOS-64/knitroampl:$PATH
 export DYLD_LIBRARY_PATH=/Users/takafumi/Knitro/knitro-10.3.1-z-MacOS-64/lib:$DYLD_LIBRARY_PATH
 
 # Tasmanian
+source /usr/local/Tasmanian/share/Tasmanian/TasmanianENVsetup.sh
 export PATH=$PATH:/usr/local/Tasmanian/bin/
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/Tasmanian/lib/
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/Tasmanian/include/
