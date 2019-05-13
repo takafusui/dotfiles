@@ -48,11 +48,23 @@ default-frame-alist))
 (setq face-font-rescale-alist '(("Ricty Diminished" . 1.00)))
 
 ;; ------------------------------------------------------------------------- ;;
+;; ediff
+;; ------------------------------------------------------------------------- ;;
+;; コントロール用のバッファを同一フレーム内に表示
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
+;; diffのバッファを上下ではなく左右に並べる
+(setq ediff-split-window-function 'split-window-horizontally)
+
+;; ------------------------------------------------------------------------- ;;
 ;; Pathの引き継ぎ
 ;; ------------------------------------------------------------------------- ;;
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 (exec-path-from-shell-copy-env "PYTHONPATH")
+
+;; ------------------------------------------------------------------------- ;;
+;; Other customizations provided by emacs
+;; ------------------------------------------------------------------------- ;;
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

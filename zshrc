@@ -11,6 +11,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+if [ $SHLVL = 1 ]; then
+  tmux
+fi
+
+# alias
+alias lst='ls -lt --color=auto'
+alias lsl='ls -l --color=auto'
+alias gs='git status'
+alias gaa='git add'
+alias gc-b='git checkout -b'
+alias gc-m='git commit -m'
+
 export PATH="/usr/local/bin:$PATH"
 
 # C++
