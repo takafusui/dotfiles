@@ -23,6 +23,10 @@ alias gaa='git add'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
 
+# Hunspell
+export DICTIONARY=en_US
+export WORDLIST=$HOME/.hunspell_personal_dictionary
+
 export PATH="/usr/local/bin:$PATH"
 
 # C++
@@ -44,9 +48,9 @@ export DYLD_LIBRARY_PATH=/usr/local/openmpi/lib:DYLD_LIBRARY_PATH
 export PATH="/usr/local/openmpi/bin:$PATH"
 
 # GAMS
-export PATH=/Applications/GAMS24.5/sysdir:$PATH
-# No license
-# export PATH=/Applications/GAMS25.0/sysdir:$PATH
+export PYTHONPATH="/opt/gams/gams27.2_linux_x64_64_sfx/apifiles/Python/api_36"
+export PATH="/opt/gams/gams27.2_linux_x64_64_sfx:$PATH"
+export LD_LIBRARY_PATH="/opt/gams/gams27.2_linux_x64_64_sfx:$LD_LIBRARY_PATH" 
 
 # Knitro license
 export ARTELYS_LICENSE=/Users/takafumi/Knitro/artelys_lic_trial_artelysknitro_student_2017-11-17_c98bf72812.txt
@@ -74,4 +78,4 @@ export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
 # source /usr/local/Tasmanian/config/TasmanianENVsetup.sh
 
 # virtualenvでpromptを変更しない
-export VIRTUAL_ENV_DISABLE_PROMPT=1
+export VIRTUAL_ENV_DISABLE_PROMPT=0
