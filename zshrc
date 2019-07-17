@@ -79,3 +79,8 @@ export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
 
 # virtualenvでpromptを変更しない
 export VIRTUAL_ENV_DISABLE_PROMPT=0
+
+# Intel MKL
+export MKL_ROOT_DIR=/opt/intel/mkl
+export LD_LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:/opt/intel/lib/intel64_lin:$LD_LIBRARY_PATH
+export LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:$LIBRARY_PATH
