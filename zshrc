@@ -84,3 +84,23 @@ export VIRTUAL_ENV_DISABLE_PROMPT=0
 export MKL_ROOT_DIR=/opt/intel/mkl
 export LD_LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:/opt/intel/lib/intel64_lin:$LD_LIBRARY_PATH
 export LIBRARY_PATH=$MKL_ROOT_DIR/lib/intel64:$LIBRARY_PATH
+
+# go
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/takafumi/.pyenv/versions/anaconda3-5.3.1/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/takafumi/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh" ]; then
+        . "/home/takafumi/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/takafumi/.pyenv/versions/anaconda3-5.3.1/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
