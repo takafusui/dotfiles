@@ -16,13 +16,22 @@ if [ $SHLVL = 1 ]; then
 fi
 
 # alias
+# alias ls='ls --color=auto'
 alias lst='ls -lt --color=auto'
 alias lsl='ls -l --color=auto'
 alias gs='git status'
 alias gaa='git add'
 alias gc-b='git checkout -b'
 alias gc-m='git commit -m'
-  
+alias res='~/Dropbox/Research/'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias drop=' ~/Dropbox'  
+alias epfl=' ~/Dropbox/Research/PhD/EPFL'  
+alias uzh=' ~/Dropbox/Research/PostDoc/UZH'  
+alias paper='cd ~/Dropbox/Research/Reference/Paper'  
+
 # Hunspell
 export DICTIONARY=en_US
 export WORDLIST=$HOME/.hunspell_personal_dictionary
