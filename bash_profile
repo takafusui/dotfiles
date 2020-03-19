@@ -1,3 +1,6 @@
+# This is a .bash_profile
+# Mainly define environment variables
+
 export PATH=/usr/local/bin:$PATH
 export PYTHONPATH="$HOME/.local/bin:$PATH"
 # the following lines were inserted for pyenv
@@ -26,8 +29,8 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/Tasmanian/include/
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/Tasmanian/include/
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/Tasmanian/lib/
 
-PATH=/usr/local/Cellar/gcc/8.2.0/bin:$PATH
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH=/usr/local/Cellar/gcc/8.2.0/bin:$PATH
+export PATH=/usr/local/opt/llvm/bin:$PATH
 
 # DocBook and AsciiDoc
 export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
