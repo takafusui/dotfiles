@@ -32,12 +32,12 @@ alias epfl=' ~/Dropbox/Research/PhD/EPFL'
 alias uzh=' ~/Dropbox/Research/PostDoc/UZH'  
 alias paper='cd ~/Dropbox/Research/Reference/Paper'  
 
+# virtualenvでpromptを変更しない
+export VIRTUAL_ENV_DISABLE_PROMPT=0
+
 # Hunspell
 export DICTIONARY=en_US
 export WORDLIST=$HOME/.hunspell_personal_dictionary
-
-# virtualenvでpromptを変更しない
-export VIRTUAL_ENV_DISABLE_PROMPT=0
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -46,17 +46,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
 eval "$(pyenv init -)"
 fi
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/takafumi/.pyenv/versions/anaconda3-5.3.1/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/takafumi/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh" ]; then
-        . "/home/takafumi/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/takafumi/.pyenv/versions/anaconda3-5.3.1/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# conda
+. /home/takafumi/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh
+conda activate
