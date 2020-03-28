@@ -43,7 +43,7 @@ default-frame-alist))
 ;; フォント
 ;; Rictyフォントの使用
 ;; ------------------------------------------------------------------------- ;;
-(set-face-attribute 'default nil :family "Ricty Diminished" :height 130)
+(set-face-attribute 'default nil :family "Ricty Diminished" :height 105)
 (set-fontset-font nil 'japanese-jisx0208 (font-spec :family "Ricty Diminished"))
 (setq face-font-rescale-alist '(("Ricty Diminished" . 1.00)))
 

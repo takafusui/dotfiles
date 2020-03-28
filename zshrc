@@ -39,6 +39,13 @@ export WORDLIST=$HOME/.hunspell_personal_dictionary
 # virtualenvでpromptを変更しない
 export VIRTUAL_ENV_DISABLE_PROMPT=0
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+eval "$(pyenv init -)"
+fi
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/takafumi/.pyenv/versions/anaconda3-5.3.1/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -53,4 +60,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
