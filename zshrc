@@ -49,3 +49,6 @@ fi
 # conda
 . /home/takafumi/.pyenv/versions/anaconda3-5.3.1/etc/profile.d/conda.sh
 conda activate
+
+# GAMS
+export PATH=/opt/gams/gams31.2_linux_x64_64_sfx:$PATH
