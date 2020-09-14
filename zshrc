@@ -11,9 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-if [ $SHLVL = 1 ]; then
-  tmux
-fi
+# if [ $SHLVL = 1 ]; then
+#   tmux
+# fi
 
 # alias
 # alias ls='ls --color=auto'
