@@ -52,3 +52,4 @@ conda activate
 
 # GAMS
 export PATH=/opt/gams/gams31.2_linux_x64_64_sfx:$PATH
+export PATH=/opt/gams/gams32.2_linux_x64_64_sfx:$PATH
