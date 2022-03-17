@@ -17,8 +17,9 @@ fi
 
 # alias
 # alias ls='ls --color=auto'
-alias lst='ls -lt --color=auto'
-alias lsl='ls -l --color=auto'
+alias lt='ls -ltF --color=auto'
+alias lr='ls -ltrF --color=auto'
+alias ll='ls -lF --color=auto'
 alias gs='git status'
 alias gaa='git add'
 alias gc-b='git checkout -b'
@@ -53,3 +54,13 @@ conda activate
 # GAMS
 export PATH=/opt/gams/gams31.2_linux_x64_64_sfx:$PATH
 export PATH=/opt/gams/gams32.2_linux_x64_64_sfx:$PATH
+
+# Cuda
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/lib/cuda/lib64:/usr/local/lib:$LD_LIBRARY_PATH
+
+# Python
+export PATH=$HOME/.local/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
